@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CanvasStart : MonoBehaviour
 {
+    public GameObject menuInfo;
+
     public void Jugar()
     {
         SceneManager.LoadScene(1);
@@ -13,6 +15,14 @@ public class CanvasStart : MonoBehaviour
     {
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    } 
+    public void Ayuda()
+    {
+        menuInfo.SetActive(true);
+    }
+    public void CerrarAyuda()
+    {
+        menuInfo.SetActive(false);
     }
 }
 
