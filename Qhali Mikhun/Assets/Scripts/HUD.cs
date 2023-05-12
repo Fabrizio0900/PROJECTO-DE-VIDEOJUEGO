@@ -9,6 +9,7 @@ public class HUD : MonoBehaviour
 {
     public GameObject menuGameOver;
     public GameObject menuPause;
+    public GameObject menuInfo;
     public TextMeshProUGUI puntos;
     public GameObject[] vidas;
     public GameObject player;
@@ -41,6 +42,16 @@ public class HUD : MonoBehaviour
     public void MostarMenu()
     {
         menuPause.SetActive(true);
+    }
+
+    public void CerarInfo()
+    {
+        menuInfo.SetActive(false);
+    }
+
+    public void MostarInfo()
+    {
+        menuInfo.SetActive(true);
     }
 
     public void ActualizarPuntos(int puntosTotales)

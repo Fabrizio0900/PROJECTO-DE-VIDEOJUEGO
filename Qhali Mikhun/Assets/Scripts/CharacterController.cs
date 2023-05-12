@@ -39,7 +39,7 @@ public class CharacterController : MonoBehaviour
 
     void ProcesarSalto()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("w"))
         {
             if (saltosRestantes >= 1)
             {
